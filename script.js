@@ -22,4 +22,15 @@ function displayBooks() {
     bookContainer.appendChild(li);
   });
 }
+
 displayBooks();
+
+// function to add newbook
+
+const form = document.querySelector('#add-book');
+form.addEventListener("submit",(e) => {
+    e.preventDefault();
+    const title = form.title.value;
+    const author = form.author.value;
+    console.log(title);
+});
