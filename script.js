@@ -20,7 +20,10 @@ class BookList {
       this.removeBtn.innerText = 'Remove';
       this.removeBtn.classList.add('remove-btn');
       this.removeBtn.setAttribute('data-id', book.id);
-      this.removeBtn.addEventListener('click', this.removeBook.bind(this));
+      this.removeBtn.addEventListener('click', this.removeBook.bind({
+        btn: this.removeBtn,
+        books: this.books,
+      }));
 
       this.li.appendChild(this.titleSpan);
       this.li.appendChild(this.authorSpan);
@@ -37,17 +40,13 @@ class BookList {
 
   removeBook() {
     // remove the book from the dom
-    console.log(this);
-    console.log(this.btn);
-    console.log(this.bookContainer);
-    this.parentLi = this.btn.parentNode;
-    this.bookContainer.removeChild(this.parentLi);
+    this.li = this.btn.parentNode;
+    this.ul = this.li.parentNode;
+    this.ul.removeChild(this.li);
     // remove from the local storage
     const id = this.btn.getAttribute('data-id');
     const parseId = parseInt(id, 10);
     const index = this.books.findIndex((book) => book.id === parseId);
-    console.log('index', index);
-    console.log('parseId', parseId);
     this.books.splice(index, 1);
     // update it on the local storage the changes made
     localStorage.setItem('books', JSON.stringify(this.books));
