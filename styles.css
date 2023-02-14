@@ -29,17 +29,27 @@ header > h1 {
   text-align: center;
 }
 
+.book-container {
+  border: 2px solid black;
+}
+
+ul :nth-child(odd) {
+  background-color: #eee;
+}
+
 ul li {
   display: flex;
-  flex-direction: column;
-  padding: 24px 0 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px 10px ;
   border-bottom: 1px solid #ababab;
   list-style: none;
 }
 
+
 .remove-btn {
   max-width: 64px;
-  margin: 10px 0 0;
 }
 
 form {
