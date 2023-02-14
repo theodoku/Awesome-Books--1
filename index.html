@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Book</title>
-
+    <!-- FONT BALSAMIQ LINK -->
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <h1>Awesome Book</h1>
+        <h1>All Awesome Books</h1>
     </header>
-    <section>
-        <ul class="book-container">
+    <section class="books">
+        <ul id="book-container" class="book-container">
             <!-- Dynamic book list comes here -->
         </ul>
+    <hr>
     </section>
-    <section>
+
+    <section id="input-form">
+        <h2>Add a new Book</h2>
         <form id="add-book">
             <input type="text" name="title" id="title" placeholder="Title">
             <input type="text" name="author" id="author" placeholder="Author">
-            <input type="submit" value="Add">
+            <button type="submit" id="add-book"> Add </button>
         </form>
     </section>
     
