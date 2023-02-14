@@ -10,12 +10,15 @@ body {
   margin: 80px auto;
 }
 
-h1, h2, h3, h4, h5, h6, ul, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
   margin: 0;
-}
-
-ul li {
- list-style: none;
 }
 
 header {
@@ -31,6 +34,7 @@ ul li {
   flex-direction: column;
   padding: 24px 0 10px;
   border-bottom: 1px solid #ababab;
+  list-style: none;
 }
 
 .remove-btn {
@@ -48,5 +52,5 @@ form input {
   max-width: 350px;
   min-height: 34px;
   margin: 12px 0;
-  padding: 12px
+  padding: 12px;
 }
