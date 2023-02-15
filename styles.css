@@ -48,7 +48,7 @@ h1 {
   color: #00f;
 }
 
-#list.books.content{
+#list.books.content {
   padding: 5rem;
 }
 
@@ -170,6 +170,14 @@ button:hover {
 
 .contact-section {
   display: none;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
 }
 
 footer {

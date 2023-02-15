@@ -52,6 +52,8 @@ Features
 - **[Add new book]**
 - **[Remove new book]**
 - **[Save all books on local storage]**
+- **[Navigation bar]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
