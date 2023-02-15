@@ -4,6 +4,21 @@ class BookList {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.bookContainer = document.querySelector('.book-container');
+
+    this.navLinks = document.querySelectorAll('.nav-link');
+    this.sections = document.querySelectorAll('.content');
+
+    this.navLinks.forEach((link, index) => {
+      link.addEventListener('click', () => {
+        this.sections.forEach((s, i) => {
+          if (index === i) {
+            s.style.display = 'block';
+          } else {
+            s.style.display = 'none';
+          }
+        });
+      });
+    });
     this.displayBooks();
   }
 
