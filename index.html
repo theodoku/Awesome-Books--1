@@ -12,22 +12,41 @@
 </head>
 <body>
     <header>
-        <h1>All Awesome Books</h1>
+        <nav>
+            <a href="/">Awesome Books</a>
+            <ul>
+                <li id="list-link" class="nav-link">
+                    <a href="#list">List</a>
+                </li>
+                <li id="add-new-link" class="nav-link">
+                    <a href="#add-new">Add new</a>
+                </li>
+                <li id="contact-link" class="nav-link">
+                    <a href="#contact">contact</a>
+                </li> 
+            </ul>
+        </nav>
     </header>
-    <section class="books">
+    <section id="list" class="books content">
+        <h1>All Awesome Books</h1>
         <ul id="book-container" class="book-container">
             <!-- Dynamic book list comes here -->
         </ul>
     <hr>
     </section>
+    <section class="form-section content">
+        <div id="input-form">
+            <h2>Add a new Book</h2>
+            <form id="add-book">
+                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="author" id="author" placeholder="Author">
+                <button type="submit" id="add-book"> Add </button>
+            </form>
+        </div>
+    </section>
 
-    <section id="input-form">
-        <h2>Add a new Book</h2>
-        <form id="add-book">
-            <input type="text" name="title" id="title" placeholder="Title">
-            <input type="text" name="author" id="author" placeholder="Author">
-            <button type="submit" id="add-book"> Add </button>
-        </form>
+    <section id="contact" class="contact-section content">
+        contact section
     </section>
     
     <!-- JS -->

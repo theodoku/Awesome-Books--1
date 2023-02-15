@@ -70,6 +70,10 @@ hr {
   box-shadow: 3px 3px black;
 }
 
+.form-section {
+  display: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -115,4 +119,8 @@ button:hover {
 .book-info {
   display: flex;
   gap: 5px;
+}
+
+.contact-section {
+  display: none;
 }
