@@ -25,8 +25,36 @@ header {
   margin: 30px 0;
 }
 
-header > h1 {
+header>h1 {
   text-align: center;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px #000 solid;
+  padding: 10px;
+
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.list:nth-child(1) {
+  border-right: 2px solid #111;
+  padding-right: 10px;
+}
+
+.list:nth-child(2) {
+  border-right: 2px solid #111;
+  padding-right: 10px;
 }
 
 .book-container {
@@ -42,6 +70,12 @@ header > h1 {
   padding: 1rem;
 }
 
+.awesome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .book-container li {
   display: flex;
   flex-direction: row;
@@ -54,14 +88,6 @@ header > h1 {
 
 #book-container li:nth-child(odd) {
   background: rgb(194, 187, 187);
-}
-
-hr {
-  width: 7rem;
-  background-color: #000;
-  border: 2px solid #000;
-  margin-top: 1.5rem;
-  border-radius: 50%;
 }
 
 .remove-btn {
@@ -123,4 +149,11 @@ button:hover {
 
 .contact-section {
   display: none;
+}
+
+.copyright {
+  width: 99%;
+  border: 2px #000 solid;
+  border-radius: 8px;
+  padding: 10px;
 }

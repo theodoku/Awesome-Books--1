@@ -12,23 +12,23 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav-bar">
             <a href="/">Awesome Books</a>
-            <ul>
-                <li id="list-link" class="nav-link">
+            <ul class="list-elements">
+                <li id="list-link" class="nav-link list">
                     <a href="#list">List</a>
                 </li>
-                <li id="add-new-link" class="nav-link">
+                <li id="add-new-link" class="nav-link list">
                     <a href="#add-new">Add new</a>
                 </li>
-                <li id="contact-link" class="nav-link">
+                <li id="contact-link" class="nav-link list">
                     <a href="#contact">contact</a>
                 </li> 
             </ul>
         </nav>
     </header>
     <section id="list" class="books content">
-        <h1>All Awesome Books</h1>
+        <h1 class="awesome">All Awesome Books</h1>
         <ul id="book-container" class="book-container">
             <!-- Dynamic book list comes here -->
         </ul>
@@ -48,6 +48,11 @@
     <section id="contact" class="contact-section content">
         contact section
     </section>
+
+    <footer>
+        <h3 class="copyright">Copyright Simon & Doku & Gilbert</h3>
+
+    </footer>
     
     <!-- JS -->
     <script type="module" src="./script.js"></script>
